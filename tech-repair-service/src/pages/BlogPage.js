@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import {Card, Col, Container, Row} from 'react-bootstrap';
 
 const blogPosts = [
-    { title: "Repair Tips", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { title: "Common Problems", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { title: "New Technology", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }
+    {title: "Repair Tips", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+    {title: "Common Problems", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+    {title: "New Technology", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
 ];
 
 const BlogPage = () => {

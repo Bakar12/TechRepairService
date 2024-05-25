@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Header styles */
+.navbar-light .navbar-nav .nav-link {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
 }
+
+.navbar-light .navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.light .form-control {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #cccccc;
+}
+
+.light .card {
+    background-color: #0000ff;
+    color: #ffffff;
+    border-color: #000099;
+}
+
+.dark .navbar, .dark .footer, .dark .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark .btn {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+.dark .form-control {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+.dark .card, .dark .form-control {
+    background-color: #c5c5c5; /* Change this to the desired color */
+    color: #ffffff;
+    border-color: #555555;
+}
+
+/* AboutPage styles */
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ServicesPage styles */
+
+.service-card {
+    height: 300px; /* Adjust the height as needed */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials styles */
+.testimonial-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.carousel-controls .btn {
+    background-color: #007bff; /* Change this to a lighter color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-controls .btn:hover {
+    background-color: #0056b3;
+}
+
+/* ContactPage styles */
+.contact-card {
+    height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
