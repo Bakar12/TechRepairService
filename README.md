@@ -10,7 +10,7 @@ Please note that this project is currently under development and not yet complet
 
 The project is structured as follows:
 
-- `src/App.js`: This is the main component of the application. It sets up the routing for the different pages.
+- `src/AdminApp.js`: This is the main component of the application. It sets up the routing for the different pages.
 - `src/pages`: This directory contains the different pages of the application (Home, Services, About, Contact, Blog).
 - `src/components`: This directory contains the different components used in the application (Header, Footer,
   ContactForm, etc.).
