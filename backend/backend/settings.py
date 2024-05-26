@@ -40,18 +40,19 @@ INSTALLED_APPS = [
     'service',
     'testimonials',
     'rest_framework',
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
+    'authentication',
 
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
 }
 
 MIDDLEWARE = [
@@ -65,6 +66,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',  # Default authentication backend
+)
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -86,7 +91,7 @@ TEMPLATES = [
 CORS_ORIGIN_ALLOW_ALL = True  # Allows all origins; for production, specify allowed origins
 # OR
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',  # Your frontend URL
+    'http://localhost:3000',  # React development server
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
