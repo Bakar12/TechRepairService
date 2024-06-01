@@ -119,18 +119,21 @@ body.dark {
 }
 
 /* Testimonials styles */
-.testimonial-carousel .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial-content {
-    max-width: 600px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+    font-weight: bold;
 }
 
 .testimonial-text {
@@ -144,38 +147,6 @@ body.dark {
     font-weight: bold;
     color: #333;
     margin-top: 10px;
-}
-
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-    display: flex !important;
-}
-
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    cursor: pointer;
-    margin: 0 10px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 20px;
-    height: 20px;
 }
 
 /* ContactPage styles */
